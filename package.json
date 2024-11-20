@@ -1,0 +1,13 @@
+{
+	"name": "0000_apple_spec_banner",
+	"version": "1.0.0",
+	"license": "MIT",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"serve": "vite preview"
+	},
+	"devDependencies": {
+		"vite": "^5.4.11"
+	}
+}

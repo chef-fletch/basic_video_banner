@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<meta
+			name="ad.size"
+			content="width=300,height=250"
+		/>
+		<title>Apple Banner Ad</title>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+			integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+		<style>
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			#click_tag {
+				position: absolute;
+				inset: 0;
+				cursor: pointer;
+				z-index: 500;
+			}
+			video {
+				opacity: 0;
+			}
+			.banner {
+				position: relative;
+				width: 300px;
+				height: 250px;
+				background-color: #f8f8f8;
+				border: 1px solid #ccc;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="banner">
+			<div id="click_tag"></div>
+			<video
+				id="ad-video"
+				muted
+				autoplay
+			>
+				<source
+					src=""
+					type="video/mp4"
+				/>
+			</video>
+		</div>
+
+		<script
+			src="./main.js"
+			type="module"
+		></script>
+		<script>
+			var link = document.getElementById("click_tag"),
+				clickTag = "https://www.apple.com/";
+
+			link.addEventListener("click", function () {
+				window.open(clickTag, "_blank");
+			});
+		</script>
+	</body>
+</html>
