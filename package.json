@@ -1,8 +1,8 @@
 {
-	"name": "0000_apple_spec_banner",
+	"name": "basic_video_banner",
 	"author": "Eric Fletcher",
 	"version": "1.0.0",
-	"license": "MIT",
+	"license": "UNLICENCED",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/chef-fletch/basic_video_banner"
